@@ -5,9 +5,9 @@ env:
   global:
 #    - TEST_DIR="$PWD/test/5.0/"
 #    - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/debian/bullseye/curl/"
+    - BUILD_DIR="$PWD/debian/bullseye/scm/"
     - REPO="quay.io/ibmz/buildpack-deps"
-    - TAG="$REPO:bullseye"
+    - TAG="$REPO:bullseye-scm"
 before_script:
   - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
 #  - cd $TEST_DIR && chmod +x $TEST_SCRIPT
