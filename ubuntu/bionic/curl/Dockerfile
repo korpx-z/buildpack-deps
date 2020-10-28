@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM quay.io/ibmz/ubuntu:16.04
+FROM quay.io/ibmz/ubuntu:18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
