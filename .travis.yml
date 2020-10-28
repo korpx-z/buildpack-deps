@@ -5,9 +5,9 @@ env:
   global:
 #    - TEST_DIR="$PWD/test/5.0/"
 #    - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/ubuntu/focal/scm/"
+    - BUILD_DIR="$PWD/bionic/focal/scm/"
     - REPO="quay.io/ibmz/buildpack-deps"
-    - TAG="$REPO:focal-scm"
+    - TAG="$REPO:bionic-scm"
 before_script:
   - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
 #  - cd $TEST_DIR && chmod +x $TEST_SCRIPT
