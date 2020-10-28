@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM debian:bullseye
+FROM quay.io/ibmz/debian:bullseye
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
