@@ -5,7 +5,7 @@ env:
   global:
 #    - TEST_DIR="$PWD/test/5.0/"
 #    - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/bionic/focal/scm/"
+    - BUILD_DIR="$PWD/bionic/scm/"
     - REPO="quay.io/ibmz/buildpack-deps"
     - TAG="$REPO:bionic-scm"
 before_script:
