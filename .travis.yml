@@ -3,16 +3,16 @@ services:
   - docker
 env:
   global:
-#    - TEST_DIR="$PWD/test/5.0/"
-#    - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/debian/buster/curl/"
+    - TEST_DIR="$PWD/"
+    - TEST_SCRIPT="test.sh"
+    - BUILD_DIR="$PWD/ubuntu/buster/curl/"
     - REPO="quay.io/ibmz/buildpack-deps"
     - TAG="$REPO:buster"
 before_script:
   - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
-#  - cd $TEST_DIR && chmod +x $TEST_SCRIPT
+  - cd $TEST_DIR && chmod +x $TEST_SCRIPT
 script:
   - cd $BUILD_DIR && docker build . --tag $TAG
+  - cd $TEST_DIR && bash $TEST_SCRIPT
 after_script:
   - docker push $TAG
-#  - cd $TEST_DIR && bash $TEST_SCRIPT
