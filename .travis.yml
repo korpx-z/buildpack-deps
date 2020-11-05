@@ -5,7 +5,7 @@ env:
   global:
     - TEST_DIR="$PWD/"
     - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/ubuntu/bullseye/curl/"
+    - BUILD_DIR="$PWD/debian/bullseye/curl/"
     - REPO="quay.io/ibmz/buildpack-deps"
     - TAG="$REPO:bullseye"
 before_script:
