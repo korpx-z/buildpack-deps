@@ -5,7 +5,7 @@ env:
   global:
     - TEST_DIR="$PWD/"
     - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/ubuntu/buster/scm/"
+    - BUILD_DIR="$PWD/debian/buster/scm/"
     - REPO="quay.io/ibmz/buildpack-deps"
     - TAG="$REPO:buster-scm"
 before_script:
