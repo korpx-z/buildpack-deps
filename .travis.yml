@@ -6,7 +6,7 @@ env:
     - TEST_DIR="$PWD/"
     - TEST_SCRIPT="test.sh"
     - BUILD_DIR="$PWD/debian/bullseye/scm/"
-    - REPO="quay.io/ibmz/buildpack-deps"
+    - REPO="quay.io/ibm/buildpack-deps"
     - TAG="$REPO:bullseye-scm"
 before_script:
   - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
