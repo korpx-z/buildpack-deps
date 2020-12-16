@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM quay.io/ibmz/buildpack-deps:bullseye
+FROM quay.io/ibm/buildpack-deps:bullseye
 
 # procps is very common in build systems, and is a reasonably small package
 RUN apt-get update && apt-get install -y --no-install-recommends \
