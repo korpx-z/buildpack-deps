@@ -1,10 +1,4 @@
-#
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
-#
-
-FROM quay.io/ibmz/debian:buster
+FROM quay.io/ibm/debian:buster
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
