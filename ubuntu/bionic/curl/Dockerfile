@@ -1,10 +1,4 @@
-#
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
-#
-
-FROM quay.io/ibmz/ubuntu:18.04
+FROM quay.io/ibm/ubuntu:18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
